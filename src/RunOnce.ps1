@@ -18,6 +18,10 @@ Write-Host "Updated the PowerShell Execution Policy to Unrestricted." -Foregroun
 Get-NetFirewallProfile | Set-NetFirewallProfile –Enabled False;
 Write-Host "The Windows Firewall has been disabled." -ForegroundColor Green;
 
+#########################################
+# Disable APIPA Automatic Private IP Addressing
+#########################################
+Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters | New-ItemProperty -Name "IPAutoconfigurationEnabled" -Value 00000000 -PropertyType "DWord"
 
 #########################################
 # Enable PS Remoting (WinRM)
