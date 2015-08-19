@@ -200,9 +200,9 @@ Write-Host "A Tools directory has been created at: $toolsDirectory." -Foreground
 #3. Create a bginfo.bgi file by running bginfo.exe and saving a bginfo.bgi file and placing in same directory as bginfo
 #########################################
 $bgInfoDestination = "$toolsDirectory\BgInfo";
-$bgInfoExe = "https://www.dropbox.com/s/kkb5zownrq9d98d/Bginfo.exe?dl=1";
+$bgInfoExe = "https://www.dropbox.com/s/jphjjnoozk8apg5/Bginfo.exe?dl=1";
 $bgInfoExePath = $bgInfoDestination + "\BgInfo.exe";
-$bgInfoTemplate = "https://www.dropbox.com/s/fsf0inwwusouipu/config.bgi?dl=1";
+$bgInfoTemplate = "https://www.dropbox.com/s/6gnhmn9y32cvvfs/config.bgi?dl=1";
 $bgInfoTemplatePath = $bgInfoDestination + "\BgInfo.bgi";
 
 
