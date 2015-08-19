@@ -22,6 +22,7 @@ Write-Host "The Windows Firewall has been disabled." -ForegroundColor Green;
 # Disable APIPA Automatic Private IP Addressing
 #########################################
 Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters | New-ItemProperty -Name "IPAutoconfigurationEnabled" -Value 00000000 -PropertyType "DWord"
+Write-Host "Automatic Private IP Addressing has been disabled." -ForegroundColor Green;
 
 #########################################
 # Enable PS Remoting (WinRM)
